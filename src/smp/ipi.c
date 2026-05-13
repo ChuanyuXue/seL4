@@ -17,7 +17,7 @@
  * switch will not occur until the core attempts to obtain the lock, at which
  * point the core will capture the pending IPI, which is discarded.
 
- * The core who triggered the store is responsible for triggering a reschedule,
+ * The core who triggered the stall is responsible for triggering a reschedule,
  * or this call will idle forever */
 void ipiStallCoreCallback(bool_t irqPath)
 {
